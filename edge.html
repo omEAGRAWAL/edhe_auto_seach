@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Search</title>
+<script>
+function randomSearch() {
+    // List of search queries
+    var searchQueries = [
+        "random search query 1",
+        "random search query 2",
+        "random search query 3",
+        "jhbfvbhj evkjc",
+        "shopify",
+        "oksss",
+        "random search query 4",
+        "random search query 5",
+        "random search query 6",
+        "random search query 7",
+        "random search query 8",
+        "random search query 9",
+        "random search query 10",
+        "random search query 11",
+        "random search query 12",
+        "random search query 13",
+        "random search query 14",
+        "random search query 15",
+        "random search query 16",
+        "random search query 17",
+        "random search query 18",
+        "random search query 19",
+        "random search query 20",
+        "random search query 21",
+        // Add more search queries here
+    ];
+
+    // Base URL of the search engine (replace with your desired search engine URL)
+    var searchEngineUrl = "https://www.bing.com/search?q=";
+
+    // Number of searches to perform
+    var numSearches = 30;
+
+    // Perform searches
+    for (var i = 0; i < numSearches; i++) {
+        // Select a random search query
+        var query = searchQueries[Math.floor(Math.random() * searchQueries.length)];
+
+        // Construct the search URL
+        var searchUrl = searchEngineUrl + encodeURIComponent(query);
+
+        // Open search URL in a new tab/window
+        window.open(searchUrl);
+    }
+}
+</script>
+</head>
+<body>
+    <button onclick="randomSearch()">Perform Random Search</button>
+</body>
+</html>
